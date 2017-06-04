@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "nodemon --exec npm run start",
     "start": "micro .",
+    "deploy": "now --name geoip && now alias $(pbpaste) geoip",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
