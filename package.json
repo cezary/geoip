@@ -1,0 +1,20 @@
+{
+  "name": "micro-geoip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec npm run start",
+    "start": "micro .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "geoip-lite": "^1.2.1",
+    "micro": "^7.3.3",
+    "micro-cors": "^0.0.4",
+    "request-ip": "^2.0.1"
+  }
+}
