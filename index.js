@@ -8,6 +8,12 @@ const cors = microCors({
 });
 
 const handler = async (req, res) => {
+  // return nothing for requests for favicon
+  if (req.url === '/favicon.ico') {
+    res.statusCode = 204;
+    return null;
+  }
+
   const { query } = parseUrl(req.url, true);
   const ip = query.ip || getClientIp(req);
 
