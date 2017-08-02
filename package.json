@@ -1,12 +1,12 @@
 {
-  "name": "micro-geoip",
+  "name": "now-geoip",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "micro-dev",
     "start": "micro",
-    "deploy": "now --name geoip && now alias $(pbpaste) geoip",
+    "deploy": "now -e NODE_ENV='production' --name geoip && now alias $(pbpaste) geoip",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
