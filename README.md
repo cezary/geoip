@@ -12,3 +12,16 @@ using MaxMind's geoip-lite database.
 `ip` - set the ip address to look up
 
 `callback` - set the name of the callback function for jsonp requests
+
+## alternatives
+
+- https://db-ip.com/api
+- https://ipapi.co
+- https://freegeoip.net
+- http://ipinfodb.com
+- https://www.iplocation.net
+- http://neutrinoapi.com
+- http://www.ip2location.com
+- https://www.telize.com
+- https://www.iplocate.io/
+- https://ipinfo.io/
