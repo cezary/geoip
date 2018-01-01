@@ -14,11 +14,11 @@
   "license": "ISC",
   "dependencies": {
     "geoip-lite": "^1.2.1",
-    "micro": "^8.0.1",
+    "micro": "^9.0.2",
     "micro-cors": "^0.0.4",
-    "request-ip": "^2.0.1"
+    "request-ip": "^2.0.2"
   },
   "devDependencies": {
-    "micro-dev": "^1.0.2"
+    "micro-dev": "^2.1.1"
   }
 }
