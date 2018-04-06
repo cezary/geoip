@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "micro-dev",
-    "start": "micro",
+    "update": "node ./node_modules/geoip-lite/scripts/updatedb.js",
+    "start": "npm run update && micro",
     "deploy": "now -e NODE_ENV='production' --name geoip && now alias $(pbpaste) geoip",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
