@@ -1,4 +1,4 @@
-# micro-geoip
+# geoip
 
 api to look up latitude and longitude by ip address, hosted on now.sh at https://geoip.now.sh
 

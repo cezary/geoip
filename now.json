@@ -1,0 +1,7 @@
+{
+  "name": "geoip",
+  "alias": "geoip.now.sh",
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
