@@ -7,18 +7,6 @@ const cors = microCors({
   allowMethods: ['GET']
 });
 
-const FAVICON_REGEX = /\/(favicon|(apple-)?touch-icon(-i(phone|pad))?(-\d{2,}x\d{2,})?(-precomposed)?)\.(jpe?g|png|ico|gif)$/i;
-
-const noFavicon = handler => (req, res) => {
-  // return nothing for requests for favicon
-  if (FAVICON_REGEX.test(req.url)) {
-    res.statusCode = 404;
-    return null;
-  }
-
-  return handler(req, res);
-}
-
 const handler = async (req, res) => {
   const { query } = parseUrl(req.url, true);
   const ip = query.ip || getClientIp(req);
@@ -35,4 +23,4 @@ const handler = async (req, res) => {
 };
 
 
-module.exports = noFavicon(cors(handler));
+module.exports = cors(handler);
