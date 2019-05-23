@@ -10,6 +10,7 @@ const currencyMap = require('./data/currency');
 const phoneMap = require('./data/phone');
 
 const errorHandler = require('./error-handler');
+const responseTime = require('./response-time');
 
 const cors = microCors({
   allowMethods: ['GET']
@@ -55,4 +56,4 @@ const handler = async (req, res) => {
   }
 };
 
-module.exports = errorHandler(cors(handler));
+module.exports = errorHandler(responseTime(cors(handler)));
