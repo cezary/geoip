@@ -1,4 +1,4 @@
-const { notFound } = require('boom');
+const { notFound } = require('@hapi/boom');
 const geoip = require('geoip-lite');
 const microCors = require('micro-cors');
 const { getClientIp } = require('request-ip');
