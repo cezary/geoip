@@ -31,12 +31,15 @@ const handler = async (req, res) => {
     throw notFound('can not locate ip');
   }
 
+  const timestamp = Date.now();
+
   const { ll, country, region, city, metro, zip } = info;
   const [latitude, longitude] = ll;
   const payload = {
     ip,
     latitude,
     longitude,
+    timestamp,
     //...countryData(country),
     country,
     region,
