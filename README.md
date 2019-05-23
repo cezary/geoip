@@ -15,13 +15,10 @@ using MaxMind's geoip-lite database.
 
 ## alternatives
 
-- https://db-ip.com/api
 - https://ipapi.co
 - https://freegeoip.net
-- http://ipinfodb.com
 - https://www.iplocation.net
-- http://neutrinoapi.com
-- http://www.ip2location.com
 - https://www.telize.com
 - https://www.iplocate.io/
 - https://ipinfo.io/
+- https://ipgeolocation.io
